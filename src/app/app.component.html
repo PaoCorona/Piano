@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>APP PIANO</title>
+  </head>
+
+  <body>
+
+    <div class="row">
+      <div class = "col-lg-4">
+        <div class ="list-group">
+
+          <a href="#" class="list-group-item list-group-item-action">App Piano</a>
+
+          <a (click)="aplicarSonido(1)" class="list-group-item list-group-item-active" style="background-color: palevioletred;"></a>
+          <a (click)="aplicarSonido(2)" class="list-group-item list-group-item-active" style="background-color: blueviolet ;"></a>
+          <a (click)="aplicarSonido(3)" class="list-group-item list-group-item-active" style="background-color:orange;"></a>
+          <a (click)="aplicarSonido(4)" class="list-group-item list-group-item-active" style="background-color:greenyellow;"></a>
+          <a (click)="aplicarSonido(5)" class="list-group-item list-group-item-active" style="background-color: mediumaquamarine;"></a>
+      
+          <audio controls>
+            <source src="../assets/sonidos/la-80237.mp3"
+              type="audio/mpeg">
+            Your browser does not support the audio element. 
+
+          </audio> 
+
+        </div>
+
+      </div>
+      
+    </div>   
+
+    </body>
+
+</html>
